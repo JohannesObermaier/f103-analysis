@@ -23,6 +23,13 @@ Electrical setup:
 Attack Board: STM32F3 Discovery
 DuT: STM32F1 or APM32F1 based device.
 
+DuT:
+Ensure that BOOT1 is set to 1.
+You might have to remove bypass/decoupling capacitors from the DuT, depending on your board.
+This applies to the power supply rails and any capacitors present on the RESET line.
+
+
+Wiring:
 Attack Board 	<-> 	DuT
 PD0+PD1		<->	3V3 (Power input)
 PD2		<->	BOOT0
